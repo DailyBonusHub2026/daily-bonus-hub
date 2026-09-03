@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://dailybonushub.netlify.app/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- 27 Review Pages - REPLACE SLUGS WITH YOUR ACTUAL 27 FROM products.json -->
+  <!-- Copy/paste your 27 slugs from your products.json file here -->
+  <url><loc>https://dailybonushub.netlify.app/review/spinquest/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/pulsz/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/stake-us/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/wow-vegas/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/mcluck/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/high-5-casino/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/chumba-casino/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/luckyland/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/global-poker/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/crown-coins/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/no-limit-coins/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/fortune-coins/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/sweeptastic/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/sweepz/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/gold-coins/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/fortune-wheelz/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/sidepot/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/baba-casino/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/legendz/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/mega-bonanza/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/jackpota/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/zula-casino/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/gambino/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/slots-capital/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/hello-millions/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/dingdingding/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dailybonushub.netlify.app/review/slotomania/</loc><lastmod>2026-05-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+</urlset>
