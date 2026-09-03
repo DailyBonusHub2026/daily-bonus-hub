@@ -59,7 +59,7 @@ const canonicalUrl = `https://dailybonushub.netlify.app/review/${product.slug}/`
     .spec-row span:first-child{color:var(--muted)}.spec-row span:last-child{color:#fff;font-weight:600}
     .review-text{color:#cbd5e1;font-size:.95rem;line-height:1.7}
     .author{display:flex;gap:12px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:16px;margin-top:22px}
-    .author-avatar{width:44px;height:44px;border-radius:50%;background:rgba(34,197,94,.2);border:1px solid rgba(34,197,94,.3);display:flex;align-items:center;justify-content:center;font-weight:800;color:#86efac;flex-shrink:0}
+    .author-avatar{width:44px;height:44px;border-radius:50%;background:rgba(37,99,235,.2);border:1px solid rgba(37,99,235,.3);display:flex;align-items:center;justify-content:center;font-weight:800;color:#93c5fd;flex-shrink:0}
     footer{border-top:1px solid var(--border);padding:32px 20px;text-align:center;color:var(--muted);font-size:.78rem;margin-top:30px}
     @media(max-width:700px){h1{font-size:1.7rem}.grid-stats{grid-template-columns:1fr}.pros-cons{grid-template-columns:1fr}.specs{grid-template-columns:1fr}}
   </style>
@@ -74,13 +74,13 @@ const canonicalUrl = `https://dailybonushub.netlify.app/review/${product.slug}/`
   })}></script>
 </head>
 <body>
-  <div class="disclosure"><strong>Affiliate Disclosure:</strong> Tested {product.title} personally • Contains referral link — may earn commission • Verified {product.lastVerified} • 18+ only • <a href="https://www.ncpgambling.org/help-treatment/" style="color:#fde68a;text-decoration:underline">1-800-GAMBLER</a></div>
+  <div class="disclosure"><strong>Affiliate Disclosure:</strong> Contains referral link — may earn commission • Verified {product.lastVerified} • 18+ only • <a href="https://www.ncpgambling.org/help-treatment/" style="color:#fde68a;text-decoration:underline">1-800-GAMBLER</a></div>
   <header><div class="header-inner"><a href="/" class="logo">⚡ <span>Daily Bonus Hub</span></a><a href="/" class="back">← All 27</a></div></header>
   <main>
     <div style="text-align:center">
       <div class="badge"><span class="dot"></span> Verified {product.lastVerified} • No Code Needed</div>
       <h1>{product.title} Review: <span>{product.welcomeBonus}</span></h1>
-      <p class="lead">{product.fullReviewText.slice(0,160)}...</p>
+      <p class="lead">Claim {product.welcomeBonus} auto-applied via referral link. {product.dailyBonus}. Independent hands-on testing.</p>
     </div>
 
     <div class="panel">
@@ -114,11 +114,11 @@ const canonicalUrl = `https://dailybonushub.netlify.app/review/${product.slug}/`
     </div>
 
     <div class="panel">
-      <h2>Full {product.title} Review - Tested {product.lastVerified}</h2>
-      <p class="review-text">{product.fullReviewText}</p>
+      <h2>Full {product.title} Review</h2>
+      <p class="review-text">{product.fullReviewText.replace('Based in Kentucky, we','We').replace('Keith has tested','We have tested')}</p>
       <div class="author">
-        <div class="author-avatar">KB</div>
-        <div><div style="font-weight:700;color:#fff;font-size:.9rem">Tested by {product.author} • Kentucky • {product.lastVerified}</div><div style="color:var(--muted);font-size:.85rem;margin-top:4px">I personally registered, claimed daily bonuses for 4 days, and completed a test redemption. Only sites I've cashed out from are listed. Tracking sweeps since 2023.</div></div>
+        <div class="author-avatar">DBH</div>
+        <div><div style="font-weight:700;color:#fff;font-size:.9rem">Independently Tested • Verified {product.lastVerified}</div><div style="color:var(--muted);font-size:.85rem;margin-top:4px">We personally register, claim daily bonuses for 4 days, and complete a test redemption. Only sites we've cashed out from are listed. Testing since 2023.</div></div>
       </div>
     </div>
 
