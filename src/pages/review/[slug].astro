@@ -1,0 +1,100 @@
+---
+import products from '../../data/products.json';
+
+export async function getStaticPaths() {
+  return products.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const pageTitle = `${product.title} Review (2026): ${product.welcomeBonus} - Verified Bonus`;
+const pageDescription = `${product.title} review - Claim ${product.welcomeBonus} auto-applied via referral link. ${product.dailyBonus}, ${product.minRedemption} min redemption, ${product.games}. Verified ${product.lastVerified}. No code needed.`;
+const canonicalUrl = `https://dailybonushub.netlify.app/review/${product.slug}/`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDescription} />
+  <link rel="canonical" href={canonicalUrl} />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${product.title} - ${product.welcomeBonus}`,
+    "brand": { "@type": "Brand", "name": product.brand },
+    "description": product.fullReviewText,
+    "image": product.imageUrl,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": product.rating,
+      "reviewCount": product.reviewCount,
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": product.affiliateUrl
+    }
+  })}></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+  <div class="bg-amber-500/10 border-b border-amber-500/20 py-2.5 px-4 text-center">
+    <p class="text-[11px] text-amber-200/90 max-w-6xl mx-auto">Affiliate Disclosure: Contains sponsored referral links - may earn commission. Verified {product.lastVerified}. 18+ only.</p>
+  </div>
+  <header class="border-b border-slate-800 bg-slate-900/50 py-4 px-4">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <a href="/" class="font-bold text-lg text-emerald-400">⚡ Daily Bonus Hub</a>
+      <a href="/" class="text-xs bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-full">← All 27 Bonuses</a>
+    </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-4 py-8 flex-1 w-full">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full uppercase mb-4">
+        Verified {product.lastVerified} • No Code Needed
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+        {product.title} Review: <span class="text-sky-400">{product.welcomeBonus}</span>
+      </h1>
+    </div>
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4">
+          <p class="text-[11px] text-slate-400 uppercase font-bold">Welcome</p>
+          <p class="text-lg font-extrabold text-white mt-1">{product.welcomeBonus}</p>
+        </div>
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4">
+          <p class="text-[11px] text-slate-400 uppercase font-bold">Daily</p>
+          <p class="text-lg font-extrabold text-white mt-1">{product.dailyBonus}</p>
+        </div>
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4">
+          <p class="text-[11px] text-slate-400 uppercase font-bold">Min Cashout</p>
+          <p class="text-lg font-extrabold text-white mt-1">{product.minRedemption}</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href={product.affiliateUrl} target="_blank" rel="sponsored nofollow" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-lg px-8 py-4 rounded-2xl">
+          Claim {product.title} Bonus →
+        </a>
+      </div>
+    </section>
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4">Full {product.title} Review</h2>
+      <p class="text-slate-300 leading-relaxed text-sm">{product.fullReviewText}</p>
+      <img src={product.imageUrl} alt={`${product.title} bonus`} width="600" height="400" loading="lazy" class="rounded-xl border border-slate-700 w-full h-auto mt-6" />
+    </section>
+    <div class="text-center">
+      <a href={product.affiliateUrl} target="_blank" rel="sponsored nofollow" class="inline-block bg-emerald-500 text-slate-950 font-extrabold px-8 py-4 rounded-2xl">Play {product.title} Now →</a>
+      <p class="text-xs text-slate-500 mt-3"><a href="/" class="underline">← Back to all 27 bonuses</a></p>
+    </div>
+  </main>
+</body>
+</html>
