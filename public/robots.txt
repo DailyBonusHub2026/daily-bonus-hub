@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block search from indexing junk params if any
+Disallow: /*?*srsltid=
+Disallow: /*?*fbclid=
+
+# Sitemap - UPDATE THIS WHEN YOU BUY YOUR DOMAIN
+Sitemap: https://dailybonushub.netlify.app/sitemap.xml
+# After you buy dailybonushub.fun, change above line to:
+# Sitemap: https://dailybonushub.fun/sitemap.xml
